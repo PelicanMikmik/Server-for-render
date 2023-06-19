@@ -13,7 +13,7 @@ const socketIO = require("socket.io")(http, {
 app.use(cors());
 let users = [];
 
-app.use(express.static('public');
+app.use(express.static('public'));
 
 socketIO.on("connection", (socket) => {
     console.log(`⚡: ${socket.id} user just connected!`);
